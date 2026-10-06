@@ -1,0 +1,19 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+html { scroll-behavior: smooth; }
+body { @apply bg-void font-body text-white antialiased overflow-x-hidden; }
+section[id] { scroll-margin-top: 4rem; }
+:focus-visible { outline: 2px solid #e8b04a; outline-offset: 3px; }
+@layer components {
+  .h-display { @apply font-display font-black uppercase tracking-wide; }
+  .btn { @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-semibold uppercase tracking-[.18em] transition duration-300 w-full sm:w-auto; }
+  .btn-primary { @apply bg-gradient-to-b from-ember to-crimson text-white shadow-[0_0_0_1px_rgba(232,176,74,.5),0_8px_30px_-6px_rgba(179,18,42,.7)] hover:shadow-[0_0_0_1px_#e8b04a,0_0_44px_rgba(240,138,36,.55)]; }
+  .btn-ghost { @apply border border-white/25 bg-white/5 backdrop-blur hover:border-arcane/70 hover:text-arcane; }
+  .glass { @apply bg-navy/60 backdrop-blur-md border border-white/10; }
+}
+.grain::after { content:""; position:absolute; inset:0; pointer-events:none; opacity:.07; mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E"); }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  .particles { display: none; }
+}
