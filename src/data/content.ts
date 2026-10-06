@@ -4,9 +4,9 @@ export const navLinks = [
   { label: "Characters", href: "#characters" }, { label: "Features", href: "#features" },
 ];
 export const characters = [
-  { name: "The Hero", text: "A fearless warrior destined to change the fate of the kingdom.", image: "/images/character-hero.jpg", glow: "#f08a24" },
-  { name: "The Sorceress", text: "Keeper of ancient magic and secrets.", image: "/images/character-sorceress.jpg", glow: "#5fd3e6" },
-  { name: "The Dragon", text: "An ancient creature whose power could destroy or save the world.", image: "/images/character-dragon.jpg", glow: "#b3122a" },
+  { name: "The Hero", text: "A fearless warrior destined to change the fate of the kingdom.", image: "/images/character-hero.webp", glow: "#f08a24" },
+  { name: "The Sorceress", text: "Keeper of ancient magic and secrets.", image: "/images/character-sorceress.webp", glow: "#5fd3e6" },
+  { name: "The Dragon", text: "An ancient creature whose power could destroy or save the world.", image: "/images/character-dragon.webp", glow: "#b3122a" },
   { name: "The Guardian", text: "A mysterious warrior protecting an ancient secret.", image: "/images/character-guardian.jpg", glow: "#e8b04a" },
 ];
 export const features: { title: string; text: string; icon: LucideIcon }[] = [

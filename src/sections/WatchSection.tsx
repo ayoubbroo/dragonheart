@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { Lock, Play } from "lucide-react";
 import { siteConfig } from "../config/site";
 import Reveal from "../components/Reveal";
@@ -19,7 +19,7 @@ export default function WatchSection() {
                   <Lock className="text-gold" size={30} aria-hidden />
                   <p className="h-display text-[clamp(1.1rem,3vw,1.8rem)] tracking-[.25em]">Content locked</p>
                   <p className="text-sm text-white/65">Complete the required step to unlock access.</p>
-                  <button onClick={() => setUnlocked(true)} className="btn btn-primary mt-2">Unlock &amp; watch →</button></>)}
+                  <a href='https://locked2.com/cl/i/wok3n1' target='_blank' rel='noopener noreferrer' className='btn btn-primary mt-2'>Unlock &amp; watch</a></>}
               </div>)}
           </div>
         </Reveal>
